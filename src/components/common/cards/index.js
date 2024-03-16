@@ -5,3 +5,6 @@ export * from "./how-can-we-help-you";
 export * from "./horizontal";
 export * from "./get-started";
 export * from "./lets-start-colored-title";
+export * from "./video";
+export * from "./our-testimonials";
+export * from "./with-check-list";

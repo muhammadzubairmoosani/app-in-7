@@ -6,7 +6,7 @@ export const CardLetsStartColoredtitle = () => {
     <div className="w-full max-w-[408px] rounded-lg overflow-hidden  border-[1px] border-gray flex flex-col items-center justify-center">
       <div className="relative w-full h-48">
         <Image
-          className="p-4 w-full absolute inset-0 object-cover h-fit w-fit rounded-lg"
+          className="p-4 w-full absolute inset-0 object-cover rounded-lg"
           src="/solutions.svg"
           alt="Solutions"
           width={100}
