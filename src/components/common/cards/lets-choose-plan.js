@@ -1,6 +1,5 @@
-import React from "react";
-import { CustomButton } from "../buttons";
 import Image from "next/image";
+import { CustomButton } from "../buttons";
 
 const plans = {
   pro: [

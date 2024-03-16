@@ -1,5 +1,3 @@
-import React from "react";
-
 export const WhatEveryPlanGetsYou = () => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-center px-8 py-8 max-w-72">
