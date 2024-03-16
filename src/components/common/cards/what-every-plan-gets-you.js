@@ -1,4 +1,4 @@
-export const WhatEveryPlanGetsYou = () => {
+export const CardWhatEveryPlanGetsYou = () => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-center px-8 py-8 max-w-72">
       <div className="mb-2 h-12 w-12 rounded-full bg-blue-500 flex items-center justify-center">

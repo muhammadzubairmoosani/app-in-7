@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const LetsStart = () => {
+export const CardLetsStart = () => {
   return (
     <div className="bg-[#F8F8F8] rounded-lg shadow-md overflow-hidden flex flex-col items-center justify-center p- px-8 py-12 max-w-[306px] max-h-[449px]">
       <div className="relative w-full h-48">

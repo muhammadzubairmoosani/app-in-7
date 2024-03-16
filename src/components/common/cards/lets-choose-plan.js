@@ -22,7 +22,7 @@ const plans = {
   ],
 };
 
-export const LetsChoosePlan = () => {
+export const CardLetsChoosePlan = () => {
   return (
     <div className="bg-white max-w-[628px] border-[1px] border-gray rounded-lg shadow-md overflow-hidden flex flex-col  p-[50px]">
       <h2 className="text-xl font-medium text-dark mb-2">Appin7 Pro</h2>
