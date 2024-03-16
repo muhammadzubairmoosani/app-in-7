@@ -8,3 +8,4 @@ export * from "./lets-start-colored-title";
 export * from "./video";
 export * from "./our-testimonials";
 export * from "./with-check-list";
+export * from "./normal";

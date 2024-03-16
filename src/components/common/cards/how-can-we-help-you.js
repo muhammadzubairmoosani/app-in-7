@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const CardHowCanWeHelpYou = () => {
   return (
-    <div className="w-full max-w-[408px] bg-pink-500 rounded-lg overflow-hidden  border-2 border-light-gray flex flex-col items-center justify-center">
+    <div className="w-full max-w-[408px] rounded-lg overflow-hidden  border-2 border-light-gray flex flex-col items-center justify-center">
       <div className="relative w-full h-48">
         <Image
           className="p-4 absolute inset-0 object-cover h-fit w-fit rounded-lg"
