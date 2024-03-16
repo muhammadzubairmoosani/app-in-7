@@ -25,7 +25,7 @@ export const CardLetsStartColoredtitle = () => {
 
         <Link
           href="#"
-          className="bg-transparent w-full text-back text-xl font-medium"
+          className="bg-transparent w-full text-black text-xl font-medium"
         >
           Lets Start →
         </Link>
