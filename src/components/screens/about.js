@@ -1,10 +1,10 @@
-import { CardNormal } from "../common";
+import { TextField } from "../common";
 
 export const About = () => {
   return (
     <div>
       <h1>About Page</h1>
-      <CardNormal />
+      <TextField name="name" placeholder="Name:" />
     </div>
   );
 };
