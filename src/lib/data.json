@@ -1,0 +1,43 @@
+{
+  "careers": {
+    "locations": [
+      { "title": "USA", "value": 16 },
+      { "title": "USA", "value": 16 },
+      { "title": "USA", "value": 16 }
+    ],
+    "reasons": [
+      {
+        "image": "/reason_to_join_1.svg",
+        "title": "Work with extraordinary people",
+        "subTitle": "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive."
+      },
+      {
+        "image": "/reason_to_join_1.svg",
+        "title": "A different reason to join",
+        "subTitle": "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive."
+      },
+      {
+        "image": "/reason_to_join_1.svg",
+        "title": "Another reason to join",
+        "subTitle": "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive."
+      }
+    ],
+    "team": [
+      {
+        "image": "/team.svg",
+        "title": "Internship experience at",
+        "subTitle": "When you connect driven people, exceptional things happen."
+      },
+      {
+        "image": "/team.svg",
+        "title": "Another team member",
+        "subTitle": "When you connect driven people, exceptional things happen."
+      },
+      {
+        "image": "/team.svg",
+        "title": "Another team member",
+        "subTitle": "When you connect driven people, exceptional things happen."
+      }
+    ]
+  }
+}
