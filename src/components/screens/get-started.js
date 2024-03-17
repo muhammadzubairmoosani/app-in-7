@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logo, ThemeSwitch } from "../common";
+import { Logo } from "../common";
 
 export const GetStarted = () => {
   return (
     <div className="min-h-screen flex justify-center items-center text-center">
       <div className="min-h-[620px]  flex flex-col items-center justify-between">
         <Logo width={100} />
-        <ThemeSwitch />
         <h1 className="text-2xl md:text-4xl font-medium">
           Create an Appin7 account
         </h1>

@@ -43,7 +43,7 @@ export const Login = () => {
               />
 
               <div className="text-center">
-                <CustomButton className="w-full">
+                <CustomButton className="w-full bg-gradient-to-r from-customRed to-customIndigo ">
                   Continue with Email
                 </CustomButton>
                 <p className="mt-4 text-sm font-medium text-right">
