@@ -26,6 +26,8 @@ module.exports = {
       gradient: "#FC321C",
       dark: "#161616",
       "inner-dark": "#2A2A2A",
+      customRed: "#FC321C",
+      customIndigo: "#B3308D",
     },
   },
   plugins: [],
