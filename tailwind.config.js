@@ -14,7 +14,11 @@ module.exports = {
       },
     },
     colors: {
-      primary: "#FF260F",
+      // primary: "#FF260F",
+      primary: {
+        DEFAULT: "#FF260F",
+        dark: "#C71F0B", // Dark mode variant for primary
+      },
       black: "#0A0A0A",
       gray: "#7B7B7B",
       "light-gray": "#F8F8F8",
@@ -25,4 +29,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };
