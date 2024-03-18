@@ -4,10 +4,10 @@ export const Contact = () => {
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="w-full max-w-[843px] text-center">
-        <h1 className="font-semibold text-3xl md:text-4xl  text-dark dark:text-white">
+        <h1 className="font-semibold text-3xl md:text-4xl  text-dark dark:text-light-gray">
           Lets Connect
         </h1>
-        <h2 className="font-medium text-lg md:text-xl  text-dark dark:text-white mt-4 mb-20">
+        <h2 className="font-medium text-lg md:text-xl  text-dark dark:text-light-gray mt-4 mb-20">
           Get in touch with the right people at Appin7. We’re here to help.
         </h2>
 

@@ -14,7 +14,7 @@ export const Login = () => {
             <Logo width={380} />
           </div>
           <div>
-            <p className="text-black dark:text-white text-base md:text-xl">
+            <p className="text-black dark:text-light-gray text-base md:text-xl">
               Not a member yet?{" "}
               <Link href="#" className="underline bg-transparent font-medium">
                 Register Now
@@ -53,7 +53,7 @@ export const Login = () => {
 
               <div>
                 <div className="text-start">
-                  <p className="text-gray dark:text-white font-medium mb-6">
+                  <p className="text-gray dark:text-light-gray font-medium mb-6">
                     Or sign in with
                   </p>
                 </div>

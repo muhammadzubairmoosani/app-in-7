@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { Heading } from "../heading";
 
-export const CardNormal = ({ items = [] }) =>
+export const CardNormal = ({ items = [], className }) =>
   items.map((item) => (
     <div
       key={item.title}
-      className="w-full max-w-[430px] overflow-hidden shadow-sm p-6"
+      className={`w-full max-w-[430px] overflow-hidden shadow-sm p-6 bg-white dark:bg-dark text-start ${className}`}
     >
       <div className="flex justify-center">
         <Image
@@ -15,9 +16,9 @@ export const CardNormal = ({ items = [] }) =>
           height={150}
         />
       </div>
-
-      <h2 className="text-xl font-semibold text-dark my-4">{item.title}</h2>
-
-      <p className="text-gray text-xl">{item.subTitle}</p>
+      <h2 className="text-xl font-semibold text-dark dark:text-light-gray my-4">
+        {item.title}
+      </h2>
+      <p className="text-gray  dark:text-light-gray text-xl">{item.subTitle}</p>
     </div>
   ));

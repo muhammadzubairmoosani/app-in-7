@@ -10,31 +10,31 @@ export const Header = () => {
       <div className="flex items-center space-x-8">
         <Link
           href="#"
-          className="text-gray-700 dark:text-white hover:text-blue-500 font-medium"
+          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
         >
           Solutions
         </Link>
         <Link
           href="#"
-          className="text-gray-700 dark:text-white hover:text-blue-500 font-medium"
+          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
         >
           Value Ads
         </Link>
         <Link
           href="#"
-          className="text-gray-700 dark:text-white hover:text-blue-500 font-medium"
+          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
         >
           Pricing
         </Link>
         <Link
           href="#"
-          className="text-gray-700 dark:text-white hover:text-blue-500 font-medium"
+          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
         >
           Resources
         </Link>
         <Link
           href="#"
-          className="text-gray-700 dark:text-white hover:text-blue-500 font-medium"
+          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
         >
           Get Started
         </Link>

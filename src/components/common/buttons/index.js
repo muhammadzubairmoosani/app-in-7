@@ -8,7 +8,7 @@ export const CustomButton = ({
 }) => {
   return (
     <button
-      className={`font-medium py-2 px-4 rounded-lg focus:outline-none w-full md:w-auto ${textColor} ${bgColor} ${className}`}
+      className={`font-medium py-2 px-4 rounded-lg focus:outline-none w-full md:w-auto flex justify-center items-center ${textColor} ${bgColor} ${className}`}
     >
       {children}
     </button>
