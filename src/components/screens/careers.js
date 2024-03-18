@@ -1,55 +1,10 @@
 import Image from "next/image";
 import { CardChooseALocation, CardNormal, CustomButton } from "../common";
 import items from "../../lib/data.json";
-// const items = {
-//   locaitons: [
-//     { title: "USA", value: 16 },
-//     { title: "USA", value: 16 },
-//     { title: "USA", value: 16 },
-//     { title: "USA", value: 16 },
-//   ],
-//   reasons: [
-//     {
-//       image: "/reason_to_join_1.svg",
-//       title: "work with extra-ordinary people",
-//       subTitle:
-//         "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive.",
-//     },
-//     {
-//       image: "/reason_to_join_1.svg",
-//       title: "work with extra-ordinary people",
-//       subTitle:
-//         "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive.",
-//     },
-//     {
-//       image: "/reason_to_join_1.svg",
-//       title: "work with extra-ordinary people",
-//       subTitle:
-//         "When you connect driven people, exceptional things happen. No matter the role, you’ll find a team of pros that will help you learn, grow and thrive.",
-//     },
-//   ],
-//   team: [
-//     {
-//       image: "/team.svg",
-//       title: "Internship experience at",
-//       subTitle: "When you connect driven people, exceptional things happen.",
-//     },
-//     {
-//       image: "/team.svg",
-//       title: "Internship experience at",
-//       subTitle: "When you connect driven people, exceptional things happen.",
-//     },
-//     {
-//       image: "/team.svg",
-//       title: "Internship experience at",
-//       subTitle: "When you connect driven people, exceptional things happen.",
-//     },
-//   ],
-// };
 
 export const Careers = () => {
   return (
-    <div className="border-2 bg-light-gray min-h-screen">
+    <div className="bg-light-gray min-h-screen py-[200px]">
       <div className="max-w-[1340px] mx-auto my-0 min-h-screen flex flex-col justify-around">
         <div className="flex gap-6 justify-center items-center">
           <input
@@ -65,16 +20,16 @@ export const Careers = () => {
           </CustomButton>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-[120px]">
           <h1 className="text-4xl mb-12 font-semibold text-dark dark:text-white">
             Chooose a Location
           </h1>
           <div className="flex justify-between">
-            <CardChooseALocation items={items.careers.locaitons} />
+            <CardChooseALocation items={items.careers.locations} />
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-[120px]">
           <h1 className="text-4xl mb-12 font-semibold text-dark dark:text-white">
             Three reasons to join Appin7
           </h1>
@@ -83,7 +38,7 @@ export const Careers = () => {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-[120px]">
           <h1 className="text-4xl mb-12 font-semibold text-dark dark:text-white">
             What our team mates are saying
           </h1>
@@ -92,7 +47,7 @@ export const Careers = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mt-[120px]">
           <h1 className="text-4xl font-semibold text-dark dark:text-white">
             We would to love to meet you
           </h1>

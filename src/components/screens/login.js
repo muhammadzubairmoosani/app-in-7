@@ -5,7 +5,7 @@ import { Checkbox, CustomButton, Logo, TextField } from "../common";
 export const Login = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full md:w-1/2 min-h-screen bg-light-gray dark:bg-inner-dark hidden sm:block md:block lg:block ">
+      <div className="w-full md:w-1/2 min-h-screen bg-light-gray dark:bg-dark hidden sm:block md:block lg:block ">
         <div className="min-h-screen flex flex-col justify-between py-16 px-36 md:px-16">
           <div>
             <h2 className="font-medium text-xl md:text-3xl">Welcome</h2>
@@ -24,7 +24,7 @@ export const Login = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 dark:bg-inner-dark flex justify-center ">
+      <div className="w-full md:w-1/2 dark:bg-dark flex justify-center ">
         <div className="md:w-[75%] min-h-screen flex flex-col justify-around">
           <h1 className="font-bold text-center md:text-left text-2xl md:text-4xl">
             Login
