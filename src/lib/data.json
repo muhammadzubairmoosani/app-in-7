@@ -40,5 +40,35 @@
         "subTitle": "When you connect driven people, exceptional things happen."
       }
     ]
+  },
+  "plans": {
+    "pro": {
+      "title": "Appin7 Pro",
+      "subTitle": "In this package we’re offering all in one business solution with a web view mobile application and Value Addons.",
+      "price": "$ 999",
+      "list": [
+        "Progressive Web Application",
+        "Deployment on iOS and Android",
+        "Mobile and Desktop Compatibility",
+        "Responsive UI",
+        "Customized Layout",
+        "Value Addons",
+        "Typically Requires 7 Day Development Time"
+      ]
+    },
+    "plus": {
+      "title": "Appin7 Plus",
+      "subTitle": "In this package we’re offering upgraded business solutions with native functionalities, customizable app design options, and Value+",
+      "price": "$ 2999",
+      "list": [
+        "Hybrid Mobile Application",
+        "Deployment on iOS and Android",
+        "Responsive UI",
+        "Native Functionalities (including Push Notifications)",
+        "Customized Layout",
+        "Value+",
+        "Typically Requires 2 Day Development Time"
+      ]
+    }
   }
 }
