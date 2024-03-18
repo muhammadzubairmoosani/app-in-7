@@ -1,11 +1,11 @@
 import data from "@/lib/data.json";
+import Image from "next/image";
 import {
   CardLetsChoosePlan,
   CustomButton,
   Heading,
   Paragraph,
 } from "../common";
-import Image from "next/image";
 
 export const Pricing = () => {
   return (
