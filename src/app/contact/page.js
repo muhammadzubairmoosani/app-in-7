@@ -1,5 +1,5 @@
 import { Contact } from "@/components/screens";
 
-export default function LoginPage() {
+export default function ContactPage() {
   return <Contact />;
 }

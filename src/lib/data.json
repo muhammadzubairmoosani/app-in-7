@@ -70,5 +70,59 @@
         "Typically Requires 2 Day Development Time"
       ]
     }
+  },
+  "howCanWeHelpYou": {
+    "cardStart": {
+      "title": "Start",
+      "image": "/card-start.svg",
+      "list": [
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mivel eget in velit leo cursus arcu. Nam nunc duis ultrices ",
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mi vel eget in velit leo cursus arcu. Nam nunc duis ultrices "
+      ]
+    },
+    "cardMarket": {
+      "title": "Market",
+      "image": "/card-market.svg",
+      "list": [
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mivel eget in velit leo cursus arcu. Nam nunc duis ultrices ",
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mi vel eget in velit leo cursus arcu. Nam nunc duis ultrices "
+      ]
+    },
+    "cardManage": {
+      "title": "Manage",
+      "image": "/card-manage.svg",
+      "list": [
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mivel eget in velit leo cursus arcu. Nam nunc duis ultrices ",
+        "Lorem ipsum dolor sit amet consectetur. Erat lorem mi vel eget in velit leo cursus arcu. Nam nunc duis ultrices "
+      ]
+    }
+  },
+  "chatWithUs": {
+    "one": {
+      "title": "Chat with us",
+      "subTitle": "Chat live with our support expert for real time assistance and quick answer to your queries."
+    },
+    "two": {
+      "title": "Contact us",
+      "subTitle": "Have a question call or need assistance? Reach out to our dedication support team we’re here to help 24/7."
+    }
+  },
+  "questions": {
+    "one": {
+      "title": "How does Appin7 work?",
+      "subTitle": "Appin7 by Nexovia Digital uses advanced technologies to extract the content and features from your website and transform them into a mobile app."
+    },
+    "two": {
+      "title": "Will my mobile app have the same look and feel as my website?",
+      "subTitle": "Appin7 strives to maintain the design elements of your website, ensuring a consistent brand experience in the mobile app."
+    },
+    "three": {
+      "title": "Is Appin7 by Nexovia Digital compatible with iOS and Android?",
+      "subTitle": "Yes, Appin7 supports both iOS and Android platforms, ensuring broad compatibility for your mobile app."
+    },
+    "four": {
+      "title": "Can I add additional features or functionalities to my mobile app?",
+      "subTitle": "Appin7 offers flexibility to integrate additional features and functionalities into your web site. Those additional changes would similarly get synced automatically."
+    }
   }
 }

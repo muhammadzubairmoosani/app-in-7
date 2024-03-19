@@ -7,3 +7,4 @@ export * from "./pricing";
 export * from "./blog-three";
 export * from "./blog-two";
 export * from "./blog-one";
+export * from "./help-center";

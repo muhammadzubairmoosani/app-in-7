@@ -1,5 +1,5 @@
 import { Careers } from "@/components/screens";
 
-export default function LoginPage() {
+export default function CareersPage() {
   return <Careers />;
 }
