@@ -7,6 +7,7 @@ export * from "./check-box";
 export * from "./header";
 export * from "./heading";
 export * from "./paragraph";
+export * from "./container";
 // export * from "./banners";
 // export * from "./footer";
 // export * from "./input-fiels";

@@ -10,7 +10,7 @@ import {
 
 export const Careers = () => {
   return (
-    <div className="bg-light-gray dark:bg-black min-h-screen py-[188px]">
+    <div className="bg-light-gray dark:bg-black min-h-screen">
       <div className="max-w-[1340px] mx-auto my-0 min-h-screen flex flex-col justify-around">
         <div className="grid grid-cols-12">
           <div className="col-span-10 px-4 py-2 flex items-center">
