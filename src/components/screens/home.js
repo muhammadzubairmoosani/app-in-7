@@ -213,8 +213,8 @@ export const Home = () => {
         <div>
           <div>
             <Heading>
-              Well, you&apos;ve come to the right place! At Appin7, we've got
-              everything you need to make your app shine brighter than ever
+              Well, you&apos;ve come to the right place! At Appin7, we&apos;ve
+              got everything you need to make your app shine brighter than ever
               before.
             </Heading>
           </div>
