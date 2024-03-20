@@ -4,31 +4,30 @@ const items = {
   points: ["point one", "point two", "point three"],
 };
 
-export const CardHowItHelpsYourECommerceStore = () => {
-  return (
-    <div className="w-full max-w-[420px] rounded-xl py-[50px] px-[20px] border-[1px] border-gray">
+export const CardHowItHelpsYourECommerceStore = ({ items = [] }) =>
+  items.map((item) => (
+    <div
+      key={item.title}
+      className="w-full max-w-[420px] rounded-xl py-[50px] px-[20px] border-[1px] border-gray"
+    >
       <div className="flex items-center">
         <Image
           className="mr-6"
-          src="/how_it_helps_1.svg"
+          src={item.image}
           alt="how it helps your e-commerce store"
           width={24}
           height={24}
         />
-        <p className="text-black text-xl font-medium">
-          Stay ahead of the competitors
-        </p>
+        <p className="text-black text-xl font-medium">{item.title}</p>
       </div>
 
       <p className="text-black border-b-[1px] border-light-gray mt-5 mb-5 pb-5">
-        Lorem ipsum dolor sit amet consectetur. Egestas nullam nunc faucibus
-        purus scelerisque venenatis volutpat augue. Eu vel in nec egestas
-        bibendum.
+        {item.subTitle}
       </p>
 
       <div>
-        {items.points.map((item, index) => (
-          <div key={index} className="flex items-center mb-4">
+        {items.points.map((item) => (
+          <div key={item} className="flex items-center mb-4">
             <dev className="flex items-center mr-2">
               <Image
                 className="mr-3"
@@ -44,5 +43,4 @@ export const CardHowItHelpsYourECommerceStore = () => {
         ))}
       </div>
     </div>
-  );
-};
+  ));
