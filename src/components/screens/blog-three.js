@@ -145,7 +145,7 @@ export const BlogThree = () => {
             <input
               id="name"
               name="name"
-              placeholder="Search by Keyword"
+              placeholder="youremail@domain.com"
               type="text"
               className="p-2  bg-light-gray focus:outline-none w-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-light-gray" // Adjust styles as needed
             />

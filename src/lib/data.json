@@ -124,5 +124,184 @@
       "title": "Can I add additional features or functionalities to my mobile app?",
       "subTitle": "Appin7 offers flexibility to integrate additional features and functionalities into your web site. Those additional changes would similarly get synced automatically."
     }
+  },
+  "homeCardOne": {
+    "one": {
+      "title": "Stay Ahead Of Competitors",
+      "subTitle": "If your goal is to have your website completed within a month or two, Appin7 can complete it in just two weeks",
+      "image": "/card-start.svg",
+      "points": [
+        "Importance to designs that reflect your brand",
+        "Regularly release updates with bug fixes",
+        "Promote your app using a variety of methods and platforms."
+      ]
+    },
+    "two": {
+      "title": "Fully Optimized App",
+      "subTitle": "Use Appin7 to enhance your mobile application; it's simplified, unstoppable, and efficient.",
+      "image": "/card-market.svg",
+      "points": [
+        "protect your app and user data from unauthorized access.",
+        "updated with the latest mobile operating systems (iOS, Android)",
+        "introducing new features that address user needs."
+      ]
+    },
+    "three": {
+      "title": "Top Quality- Unmatched Prices",
+      "subTitle": "While creating a website might cost thousands of dollars, Appin7 charges only $999 for the development of an app including three months of maintenance",
+      "image": "/card-manage.svg",
+      "points": [
+        "Advance Web Platform",
+        "Dynamic User Interface",
+        "One Week Custom Layout Design"
+      ]
+    },
+    "four": {
+      "title": "Peak performance guaranteed",
+      "subTitle": "Peak performance guaranteed",
+      "image": "/card-manage.svg",
+      "points": [
+        "heavy computations without blocking the UI.",
+        "right data structure for better performance",
+        "Simplify database queries to cut down on query execution time."
+      ]
+    },
+    "five": {
+      "title": "Boosting Revenue, Expanding Horizons",
+      "subTitle": "Appin7 makes sure that every customer's business achieves unparalleled success and achieves its full potential by offering a variety of services and solutions",
+      "image": "/card-manage.svg",
+      "points": [
+        "Custom Software Development",
+        "Ecommerce Solution",
+        "Digital Transformation"
+      ]
+    },
+    "six": {
+      "title": "One stop shop - tech solutions!",
+      "subTitle": "With Appin7, you can fully realize the potential of your online presence and enjoy the convenience of having all of your tech needs taken care of in one place",
+      "image": "/card-manage.svg",
+      "points": [
+        "Technology Consulting and Strategy",
+        "App Customization and Branding",
+        "Ongoing Support and Maintenance"
+      ]
+    }
+  },
+  "homeCardTwo": {
+    "1": {
+      "title": "Native App",
+      "subTitle": "We use specific programming languages and application programming interfaces (APIs) to replicate website functionalities into an interactive mobile experience that is specific to the platform it's designed for."
+    },
+    "2": {
+      "title": "Hybrid App",
+      "subTitle": "involves using web languages such as HTML, CSS, and JavaScript that can be compiled as native apps that can function across multiple  platforms without sacrificing website features."
+    },
+    "3": {
+      "title": "Cross-Platform App",
+      "subTitle": "We  develop these using frameworks like React Native or Flutter which allow us to efficiently create apps that run on both iOS and Android. By utilizing this approach we can maintain native performance and achieve faster development."
+    },
+    "4": {
+      "title": "Low-code Development",
+      "subTitle": "We deploy website functionalities as fully-functional mobile applications using a Web view component approach. In this scenario, we integrate website content within a native container for quick deployment of website features."
+    }
+  },
+  "postLaunch": {
+    "one": {
+      "image": "/home.svg",
+      "title": "Customer relationship management",
+      "subTitle": "customers happy with personalized experiences and smooth processes.",
+      "link": "#"
+    },
+    "two": {
+      "image": "/computer.svg",
+      "title": "Live Chat",
+      "subTitle": "Chat live with customers for instant support and better user satisfaction.",
+      "link": "#"
+    },
+    "three": {
+      "image": "/analytics.svg",
+      "title": "Post Launch PR",
+      "subTitle": "Boost app visibility and engage with your audience through smart post-launch PR strategies.",
+      "link": "#"
+    },
+    "four": {
+      "image": "/home.svg",
+      "title": "human resource management Integration",
+      "subTitle": "Efficiently manage your workforce for a successful organization.",
+      "link": "#"
+    },
+    "five": {
+      "image": "/computer.svg",
+      "title": "human resource management Integration",
+      "subTitle": "Get expert tech support to keep your operations running smoothly.",
+      "link": "#"
+    },
+    "six": {
+      "image": "/analytics.svg",
+      "title": "Post Launch PR ",
+      "subTitle": "Analytics & Optimization: Analyze and improve app performance after launch with valuable insights.",
+      "link": "#"
+    }
+  },
+  "preLaunch": {
+    "one": {
+      "image": "/home.svg",
+      "title": "Server Management",
+      "subTitle": "Enjoy hassle-free hosting and domain services for a full year, so you can focus on your app's development.",
+      "link": "#"
+    },
+    "two": {
+      "image": "/computer.svg",
+      "title": "Website Development",
+      "subTitle": "Get a stunning website that complements your app perfectly.",
+      "link": "#"
+    },
+    "three": {
+      "image": "/analytics.svg",
+      "title": "BRAND COLABORATION",
+      "subTitle": " Build a strong brand identity with our expertly crafted collaterals.",
+      "link": "#"
+    },
+    "four": {
+      "image": "/home.svg",
+      "title": "PR and Blog Posts",
+      "subTitle": "Generate buzz around your app with strategic PR, Well researched A11y standard content and engaging blog posts",
+      "link": "#"
+    },
+    "five": {
+      "image": "/computer.svg",
+      "title": "Search Marketing & Social Media Setup",
+      "subTitle": "Let us handle your online presence, ensuring your app gets the visibility it deserves.",
+      "link": "#"
+    },
+    "six": {
+      "image": "/analytics.svg",
+      "title": "Google Listing & Indexing",
+      "subTitle": "Ensure your app is easily discoverable by users on the world's most popular search engine.",
+      "link": "#"
+    }
+  },
+  "testimonials": {
+    "one": {
+      "image": "/webflow.svg",
+      "title": "For our business, collaborating with Appin7 has been a wise strategic choice. Their creative solutions, training, continuous support for our web flow users, and progressive approach have given us a competitive advantage in the industry. Additionally, they developed highly effective automated workflows for form submission, content publication, and user administration. We hope for a fruitful long-term partnership with their group.",
+      "avatar": "/avatar.svg",
+      "username": "Name",
+      "userTitle": "Profesison"
+    },
+    "two": {
+      "image": "/amazon.svg",
+      "title": "Working with Appin7 for a considerable amount of time, we have found that they are the most reliable company. They are always there to help with SEO and advertising to increase product visibility when we need them. Furthermore, it provided data analytics services to aid in our understanding of industry trends and our company's sales on Amazon statistical data. We sincerely admire our collaboration with it.",
+      "avatar": "/avatar.svg",
+      "username": "Name",
+      "userTitle": "Profesison"
+    },
+    "three": {
+      "image": "/paypal.svg",
+      "title": "Working with Appin7 for a considerable amount of time, we have found that they are the most reliable company. They are always there to help with SEO and advertising to increase product visibility when we need them. Furthermore, it provided data analytics services to aid in our understanding of industry trends and our company's sales on Amazon statistical data. We sincerely admire our collaboration with it.",
+      "avatar": "/avatar.svg",
+      "username": "Name",
+      "userTitle": "Profesison"
+    }
   }
 }

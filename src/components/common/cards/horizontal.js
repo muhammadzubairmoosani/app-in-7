@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export const CardHorizontal = ({ item, link, bgColor = "bg-white" }) => (
+export const CardHorizontal = ({
+  item,
+  link,
+  linkText = "Chat now",
+  bgColor = "bg-white",
+}) => (
   <div
     className={`w-full max-w-[630px] p-8 rounded-lg overflow-hidden  border-2 border-gray dark:bg-dark flex flex-col items-center justify-center ${bgColor}`}
   >
@@ -12,8 +17,11 @@ export const CardHorizontal = ({ item, link, bgColor = "bg-white" }) => (
     </h2>
 
     {link && (
-      <Link href={link} className="mt-6 bg-transparent w-full text-primary">
-        Chat now
+      <Link
+        href={link}
+        className={`mt-6 bg-transparent w-full text-primary ${linkClassName}`}
+      >
+        {linkText}
       </Link>
     )}
   </div>
