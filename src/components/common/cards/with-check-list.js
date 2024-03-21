@@ -7,7 +7,7 @@ const items = {
 export const CardHowItHelpsYourECommerceStore = ({ item }) => (
   <div
     key={item.title}
-    className="w-full  max-w-[411px] rounded-xl py-[30px] px-[15px] border-[1px] border-gray"
+    className="w-full  max-w-[411px] rounded-xl py-[30px] px-[15px] border-[1px] border-gray dark:bg-dark"
   >
     <div className="flex items-center">
       <Image
@@ -17,10 +17,12 @@ export const CardHowItHelpsYourECommerceStore = ({ item }) => (
         width={24}
         height={24}
       />
-      <p className="text-black text-xl font-medium">{item.title}</p>
+      <p className="text-black dark:text-light-gray text-xl font-medium">
+        {item.title}
+      </p>
     </div>
 
-    <p className="text-black border-b-[1px] border-light-gray mt-5 mb-5 pb-5">
+    <p className="text-black border-b-[1px] border-light-gray dark:text-light-gray mt-5 mb-5 pb-5">
       {item.subTitle}
     </p>
 
@@ -36,7 +38,9 @@ export const CardHowItHelpsYourECommerceStore = ({ item }) => (
               height={15}
               priority
             />
-            <span className="text-gray-700 text-dark text-xl">{item}</span>
+            <span className="text-gray-700 text-dark dark:text-light-gray text-xl">
+              {item}
+            </span>
           </dev>
         </div>
       ))}

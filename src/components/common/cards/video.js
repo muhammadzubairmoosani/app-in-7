@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export const CardVideo = () => {
   return (
-    <div className="relative w-full rounded-lg">
+    <div className="w-[307] h-[170] rounded-lg">
       <Image
-        className="absolute object-cover w-[307px] rounded-lg"
+        className="object-cover rounded-lg w-full"
         src="/video.svg"
         alt="video"
         width={100}

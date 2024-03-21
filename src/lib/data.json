@@ -253,37 +253,37 @@
   },
   "preLaunch": {
     "one": {
-      "image": "/home.svg",
+      "image": "/pre1.svg",
       "title": "Server Management",
       "subTitle": "Enjoy hassle-free hosting and domain services for a full year, so you can focus on your app's development.",
       "link": "#"
     },
     "two": {
-      "image": "/computer.svg",
+      "image": "/pre2.svg",
       "title": "Website Development",
       "subTitle": "Get a stunning website that complements your app perfectly.",
       "link": "#"
     },
     "three": {
-      "image": "/analytics.svg",
+      "image": "/pre3.svg",
       "title": "BRAND COLABORATION",
       "subTitle": "Build a strong brand identity with our expertly crafted collaterals.",
       "link": "#"
     },
     "four": {
-      "image": "/home.svg",
+      "image": "/pre4.svg",
       "title": "PR and Blog Posts",
       "subTitle": "Generate buzz around your app with strategic PR, Well researched A11y standard content and engaging blog posts",
       "link": "#"
     },
     "five": {
-      "image": "/computer.svg",
+      "image": "/pre5.svg",
       "title": "Search Marketing & Social Media Setup",
       "subTitle": "Let us handle your online presence, ensuring your app gets the visibility it deserves.",
       "link": "#"
     },
     "six": {
-      "image": "/analytics.svg",
+      "image": "/pre6.svg",
       "title": "Google Listing & Indexing",
       "subTitle": "Ensure your app is easily discoverable by users on the world's most popular search engine.",
       "link": "#"

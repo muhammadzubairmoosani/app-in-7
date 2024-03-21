@@ -16,11 +16,13 @@ export const CardGetStarted = ({ item }) => (
       <p className="text-xl max-w-40">{item.title}</p>
     </div>
 
-    <h2 className="w-full text-lg mt-6 mb-14 text-dark">{item.subTitle}</h2>
+    <h2 className="w-full text-lg mt-6 mb-14 text-dark dark:text-light-gray">
+      {item.subTitle}
+    </h2>
 
     <Link
       href={item.link}
-      className="bg-transparent w-full text-dark text-xl font-semibold"
+      className="bg-transparent w-full text-dark dark:text-light-gray text-xl font-semibold"
     >
       Get Started →
     </Link>
