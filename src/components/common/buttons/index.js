@@ -1,8 +1,8 @@
 import React from "react";
 
 export const CustomButton = ({
-  bgColor = "text-white",
-  textColor = "bg-primary",
+  bgColor = "bg-primary",
+  textColor = "text-white",
   children,
   className,
 }) => {
