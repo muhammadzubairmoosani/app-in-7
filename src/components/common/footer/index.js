@@ -7,6 +7,7 @@ import {
   Heading,
   TextField,
   Logo,
+  ThemeSwitch,
 } from "../index";
 import { useTheme } from "next-themes";
 
@@ -115,6 +116,7 @@ export const Footer = () => {
           <Paragraph className="text-gray text-lg font-medium">
             A Product of Nexovia Digital
           </Paragraph>
+          <ThemeSwitch />
         </div>
       </Container>
     </div>
