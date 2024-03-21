@@ -17,10 +17,7 @@ export const CardHorizontal = ({
     </h2>
 
     {link && (
-      <Link
-        href={link}
-        className={`mt-6 bg-transparent w-full text-primary ${linkClassName}`}
-      >
+      <Link href={link} className={`mt-6 bg-transparent w-full text-primary`}>
         {linkText}
       </Link>
     )}

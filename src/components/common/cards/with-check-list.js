@@ -7,7 +7,7 @@ const items = {
 export const CardHowItHelpsYourECommerceStore = ({ item }) => (
   <div
     key={item.title}
-    className="w-full max-w-[420px] rounded-xl py-[50px] px-[20px] border-[1px] border-gray"
+    className="w-full  max-w-[411px] rounded-xl py-[30px] px-[15px] border-[1px] border-gray"
   >
     <div className="flex items-center">
       <Image

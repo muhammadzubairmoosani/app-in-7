@@ -190,19 +190,27 @@
   "homeCardTwo": {
     "1": {
       "title": "Native App",
-      "subTitle": "We use specific programming languages and application programming interfaces (APIs) to replicate website functionalities into an interactive mobile experience that is specific to the platform it's designed for."
+      "subTitle": "We use specific programming languages and application programming interfaces (APIs) to replicate website functionalities into an interactive mobile experience that is specific to the platform it's designed for.",
+      "link": "#",
+      "linkText": "Get Started"
     },
     "2": {
       "title": "Hybrid App",
-      "subTitle": "involves using web languages such as HTML, CSS, and JavaScript that can be compiled as native apps that can function across multiple  platforms without sacrificing website features."
+      "subTitle": "involves using web languages such as HTML, CSS, and JavaScript that can be compiled as native apps that can function across multiple  platforms without sacrificing website features.",
+      "link": "#",
+      "linkText": "Get Started"
     },
     "3": {
       "title": "Cross-Platform App",
-      "subTitle": "We  develop these using frameworks like React Native or Flutter which allow us to efficiently create apps that run on both iOS and Android. By utilizing this approach we can maintain native performance and achieve faster development."
+      "subTitle": "We  develop these using frameworks like React Native or Flutter which allow us to efficiently create apps that run on both iOS and Android. By utilizing this approach we can maintain native performance and achieve faster development.",
+      "link": "#",
+      "linkText": "Get Started"
     },
     "4": {
       "title": "Low-code Development",
-      "subTitle": "We deploy website functionalities as fully-functional mobile applications using a Web view component approach. In this scenario, we integrate website content within a native container for quick deployment of website features."
+      "subTitle": "We deploy website functionalities as fully-functional mobile applications using a Web view component approach. In this scenario, we integrate website content within a native container for quick deployment of website features.",
+      "link": "#",
+      "linkText": "Get Started"
     }
   },
   "postLaunch": {
@@ -259,7 +267,7 @@
     "three": {
       "image": "/analytics.svg",
       "title": "BRAND COLABORATION",
-      "subTitle": " Build a strong brand identity with our expertly crafted collaterals.",
+      "subTitle": "Build a strong brand identity with our expertly crafted collaterals.",
       "link": "#"
     },
     "four": {

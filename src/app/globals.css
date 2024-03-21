@@ -33,3 +33,8 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles.css */
+.home-background-image {
+  background-image: url("/home-banner.png");
+}

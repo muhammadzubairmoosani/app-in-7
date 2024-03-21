@@ -19,7 +19,7 @@ export const CardGetStarted = ({ item }) => (
     <h2 className="w-full text-lg mt-6 mb-14 text-dark">{item.subTitle}</h2>
 
     <Link
-      href={title.Link}
+      href={item.link}
       className="bg-transparent w-full text-dark text-xl font-semibold"
     >
       Get Started →
