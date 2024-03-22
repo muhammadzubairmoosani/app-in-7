@@ -25,7 +25,7 @@ export const Footer = () => {
               Enter your email for our newsletters.
             </Paragraph>
 
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-4 mb-4 flex-wrap md:flex-nowrap">
               <TextField
                 className="mb-0 w-52"
                 inputClassName="rounded-2xl border-gray bg-light-gray dark:bg-dark"

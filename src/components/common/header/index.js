@@ -1,127 +1,89 @@
-import Link from "next/link";
-import { CustomButton, Logo } from "../index"; // Assuming Logo component
+"use client";
 
-export const Header = () => {
+import React, { useState } from "react";
+import NavLinks from "./nav-links";
+import Link from "next/link";
+import { Logo } from "../logo";
+import { CustomButton } from "../buttons";
+import Image from "next/image";
+
+const Navbar = () => {
+  const [open, setOpen] = useState(true);
   return (
-    <header className="flex justify-between items-center py-4 px-16 bg-white dark:bg-gray-800">
-      <Link href="/">
-        <Logo width={150} />
-      </Link>
-      <div className="flex items-center space-x-8">
-        <Link
-          href="#"
-          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
+    <nav className="bg-white">
+      <div className="flex items-center font-medium justify-around">
+        <div className="z-50 px-5 py-3 md:w-auto w-full flex justify-between items-center">
+          <Link href="/">
+            <Logo width={50} />
+          </Link>
+          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+            <Image
+              src={open ? "/close.svg" : "/menu.svg"}
+              alt="menu"
+              width={30}
+              height={30}
+            />
+          </div>
+        </div>
+        <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
+          <NavLinks />
+        </ul>
+        <div className="md:block hidden">
+          <div className="flex gap-6">
+            <CustomButton
+              bgColor="bg-transparent hover:bg-light-gray"
+              textColor="text-black"
+            >
+              <Image
+                className="mr-2"
+                src="/eco.svg"
+                alt="eco"
+                width={15}
+                height={10}
+              />
+              Talk to Sales
+            </CustomButton>
+            <CustomButton className="bg-gradient-to-r from-customRed to-customIndigo ">
+              Get Started
+            </CustomButton>
+
+            <Image src="/map.svg" alt="map" width={20} height={20} />
+            <Image src="/moon.svg" alt="moon" width={20} height={20} />
+          </div>
+        </div>
+        {/* Mobile nav */}
+        <ul
+          className={`
+        md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        duration-500 ${open ? "left-0" : "left-[-100%]"}
+        `}
         >
-          Solutions
-        </Link>
-        <Link
-          href="#"
-          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
-        >
-          Value Ads
-        </Link>
-        <Link
-          href="#"
-          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
-        >
-          Pricing
-        </Link>
-        <Link
-          href="#"
-          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
-        >
-          Resources
-        </Link>
-        <Link
-          href="#"
-          className="text-gray-700 dark:text-light-gray hover:text-blue-500 font-medium"
-        >
-          Get Started
-        </Link>
-        <CustomButton bgColor="bg-transparent" className="hover:bg-light-gray">
-          Login
-        </CustomButton>
-        {/* <button className="rounded-full bg-blue-500 py-2 px-4 text-white font-medium hover:bg-blue-600 focus:outline-none">
-          Login
-        </button> */}
+          <NavLinks />
+          <div>
+            <CustomButton bgColor="bg-transparent" textColor="text-black">
+              <Image
+                className="mr-2"
+                src="/eco.svg"
+                alt="eco"
+                width={15}
+                height={10}
+              />
+              Talk to Sales
+            </CustomButton>
+          </div>
+          <div className="py-5">
+            <CustomButton className="bg-gradient-to-r from-customRed to-customIndigo ">
+              Get Started
+            </CustomButton>
+          </div>
+          <div className="py-5 flex justify-evenly">
+            <Image src="/map.svg" alt="map" width={25} height={25} />
+            <Image src="/moon.svg" alt="moon" width={25} height={25} />
+          </div>
+        </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 
-//////////////////////// ================== OTHER
-
-// import React, { useState } from 'react';
-// import Link from 'next/link';
-
-// const Navbar = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   const toggleDropdown = () => {
-//     setIsOpen(!isOpen);
-//   };
-
-//   const dropdownItems = [
-//     { title: 'Item 1', href: '#' },
-//     { title: 'Item 2', href: '#' },
-//     { title: 'Item 3', href: '#' },
-//   ];
-
-//   return (
-//     <nav className="bg-gray-800 text-white px-4 py-2 flex justify-between items-center">
-//       <Link href="/">
-//         <a className="text-xl font-bold">Logo</a>
-//       </Link>
-//       <div className="hidden md:flex items-center">
-//         {dropdownItems.map((item) => (
-//           <Link key={item.title} href={item.href}>
-//             <a className="px-4 hover:text-gray-200">{item.title}</a>
-//           </Link>
-//         ))}
-//       </div>
-//       <button
-//         className="md:hidden focus:outline-none"
-//         onClick={toggleDropdown}
-//       >
-//         {isOpen ? (
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             className="h-6 w-6"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke="currentColor"
-//           >
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-//           </svg>
-//         ) : (
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             className="h-6 w-6"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke="currentColor"
-//           >
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-//           </svg>
-//         )}
-//       </button>
-//       <div className={`md:hidden absolute top-full left-0 w-full bg-gray-800 mt-2 py-4 ${isOpen ? 'block' : 'hidden'}`}>
-//         {dropdownItems.map((item) => (
-//           <Link key={item.title} href={item.href}>
-//             <a className="block px-4 py-2 text-white hover:bg-gray-700">{item.title}</a>
-//           </Link>
-//         ))}
-//       </div>
-//       <div className="hidden md:flex items-center ml-4">
-//         <Link href="#">
-//           <a className="px-4 hover:text-gray-200">Button 1</a>
-//         </Link>
-//         <Link href="#">
-//           <a className="px-4 hover:text-gray-200">Button 2</a>
-//         </Link>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
+export default Navbar;
