@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Logo } from "../logo";
 import { CustomButton } from "../buttons";
 import Image from "next/image";
+import { ThemeSwitch } from "../theme-switch";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true);
@@ -48,7 +49,7 @@ const Navbar = () => {
             </CustomButton>
 
             <Image src="/map.svg" alt="map" width={20} height={20} />
-            <Image src="/moon.svg" alt="moon" width={20} height={20} />
+            <ThemeSwitch />
           </div>
         </div>
         {/* Mobile nav */}

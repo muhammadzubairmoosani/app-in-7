@@ -123,7 +123,7 @@ export const links = [
   },
   {
     name: "Resources",
-    submenu: false,
+    submenu: true,
     sublinks: [
       {
         Head: "About",

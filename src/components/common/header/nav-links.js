@@ -18,10 +18,7 @@ const NavLinks = () => {
                 setSubHeading("");
               }}
             >
-              <div className="flex gap-2 items-center">
-                <Image src={link.image} alt="icon" width={23} height={23} />
-                {link.name}
-              </div>
+              {link.name}
               {link.name !== "Pricing" && (
                 <span className="text-xl md:hidden inline">
                   <Image
@@ -56,9 +53,18 @@ const NavLinks = () => {
                   <div className="bg-white p-5 grid grid-cols-3 gap-10">
                     {link.sublinks.map((mysublinks) => (
                       <div key={mysublinks.Head}>
-                        <h1 className="text-lg font-semibold">
-                          {mysublinks.Head}
-                        </h1>
+                        <div className="flex items-center gap-3">
+                          <Image
+                            src={mysublinks.image}
+                            alt="icon"
+                            width={23}
+                            height={23}
+                          />
+
+                          <h1 className="text-lg font-semibold">
+                            {mysublinks.Head}
+                          </h1>
+                        </div>
                         {mysublinks.sublink.map((slink) => (
                           <li
                             key={slink.link}
@@ -97,7 +103,16 @@ const NavLinks = () => {
                     }
                     className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
                   >
-                    {slinks.Head}
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src={slinks.image}
+                        alt="icon"
+                        width={23}
+                        height={23}
+                      />
+
+                      {slinks.Head}
+                    </div>
 
                     <span className="text-xl md:mt-1 md:ml-2 inline">
                       <Image
@@ -108,6 +123,7 @@ const NavLinks = () => {
                       />
                     </span>
                   </h1>
+                  {/* </div> */}
                   <div
                     className={`${
                       subHeading === slinks.Head ? "md:hidden" : "hidden"
