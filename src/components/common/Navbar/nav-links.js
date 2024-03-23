@@ -1,195 +1,23 @@
 "use client";
-// import React, { useState } from "react";
-// import Link from "next/link";
-// import data from "@/lib/data.json";
-// import Image from "next/image";
-// import { Heading } from "../heading";
 
-// const NavLinks = () => {
-//   const [heading, setHeading] = useState("");
-//   const [subHeading, setSubHeading] = useState("");
-//   return (
-//     <>
-//       {data.links.map((link) => (
-//         <div key={link.name}>
-//           <div className="px-3 text-left md:cursor-pointer group">
-//             <Heading
-//               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
-//               onClick={() => {
-//                 heading !== link.name ? setHeading(link.name) : setHeading("");
-//                 setSubHeading("");
-//               }}
-//             >
-//                {link.name}
-//               {link.name !== "Pricing" && (
-//                 <span className="text-xl md:hidden inline">
-//                   <Image
-//                     src="/drop-down.svg"
-//                     alt="drop-down"
-//                     width={7}
-//                     height={4}
-//                   />
-//                 </span>
-//               )}
-//               {/* <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2"> */}
-//               {link.name !== "Pricing" && (
-//                 <span className="text-xl md:mt-1 md:ml-2  md:block hidden">
-//                   <Image
-//                     src="/drop-down.svg"
-//                     alt="drop-down"
-//                     width={7}
-//                     height={4}
-//                   />
-//                 </span>
-//               )}
-//             </Heading>
-//             <h1
-//               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
-//               onClick={() => {
-//                 heading !== link.name ? setHeading(link.name) : setHeading("");
-//                 setSubHeading("");
-//               }}
-//             >
-//               {link.name}
-//               {link.name !== "Pricing" && (
-//                 <span className="text-xl md:hidden inline">
-//                   <Image
-//                     src="/drop-down.svg"
-//                     alt="drop-down"
-//                     width={7}
-//                     height={4}
-//                   />
-//                 </span>
-//               )}
-//               {/* <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2"> */}
-//               {link.name !== "Pricing" && (
-//                 <span className="text-xl md:mt-1 md:ml-2  md:block hidden">
-//                   <Image
-//                     src="/drop-down.svg"
-//                     alt="drop-down"
-//                     width={7}
-//                     height={4}
-//                   />
-//                 </span>
-//               )}
-//             </h1>
-//             {link.submenu && (
-//               <div>
-//                 <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
-//                   <div className="py-3">
-//                     <div
-//                       className="w-4 h-4 left-3 absolute
-//                     mt-1 bg-white rotate-45"
-//                     ></div>
-//                   </div>
-//                   <div className="bg-white p-5 grid grid-cols-3 gap-10">
-//                     {link.sublinks.map((mysublinks) => (
-//                       <div key={mysublinks.Head}>
-//                         <div className="flex items-center gap-3">
-//                           <Image
-//                             src={mysublinks.image}
-//                             alt="icon"
-//                             width={23}
-//                             height={23}
-//                           />
-
-//                           <h1 className="text-lg font-semibold">
-//                             {mysublinks.Head}
-//                           </h1>
-//                         </div>
-//                         {mysublinks.sublink.map((slink) => (
-//                           <li
-//                             key={slink.link}
-//                             className="text-sm text-gray-600 my-2.5"
-//                           >
-//                             <Link
-//                               href={slink.link}
-//                               className="hover:text-primary"
-//                             >
-//                               {slink.name}
-//                             </Link>
-//                           </li>
-//                         ))}
-//                       </div>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-//             )}
-//           </div>
-//           {/* Mobile menus */}
-//           <div
-//             className={`
-//             ${heading === link.name ? "md:hidden" : "hidden"}
-//           `}
-//           >
-//             {/* sublinks */}
-//             {link.sublinks.map((slinks) => (
-//               <div key={slinks.Head}>
-//                 <div>
-//                   <h1
-//                     onClick={() =>
-//                       subHeading !== slinks.Head
-//                         ? setSubHeading(slinks.Head)
-//                         : setSubHeading("")
-//                     }
-//                     className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
-//                   >
-//                     <div className="flex items-center gap-3">
-//                       <Image
-//                         src={slinks.image}
-//                         alt="icon"
-//                         width={23}
-//                         height={23}
-//                       />
-
-//                       {slinks.Head}
-//                     </div>
-
-//                     <span className="text-xl md:mt-1 md:ml-2 inline">
-//                       <Image
-//                         src="/drop-down.svg"
-//                         alt="drop-down"
-//                         width={7}
-//                         height={4}
-//                       />
-//                     </span>
-//                   </h1>
-//                   {/* </div> */}
-//                   <div
-//                     className={`${
-//                       subHeading === slinks.Head ? "md:hidden" : "hidden"
-//                     }`}
-//                   >
-//                     {slinks.sublink.map((slink) => (
-//                       <li className="py-3 pl-14" key={slink.name}>
-//                         <Link href={slink.link}>{slink.name}</Link>
-//                       </li>
-//                     ))}
-//                   </div>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       ))}
-//     </>
-//   );
-// };
-
-// export default NavLinks;
-
-import React, { useState } from "react";
-import Link from "next/link";
 import data from "@/lib/data.json";
-import Image from "next/image";
-import { Heading } from "../heading";
 import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Heading } from "../heading";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+  const [dropDownIcon, setDropDownIcon] = useState("");
   const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setDropDownIcon(
+      resolvedTheme === "dark" ? "/drop-down-white.svg" : "/drop-down.svg"
+    );
+  }, [resolvedTheme]);
 
   return (
     <>
@@ -207,18 +35,13 @@ const NavLinks = () => {
               {link.name !== "Pricing" && (
                 <span className="text-xl md:hidden inline">
                   <Image
-                    src={
-                      resolvedTheme === "dark"
-                        ? "/drop-down-white.svg"
-                        : "/drop-down.svg"
-                    }
+                    src={dropDownIcon}
                     alt="drop-down"
                     width={7}
                     height={4}
                   />
                 </span>
               )}
-              {/* <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2"> */}
               {link.name !== "Pricing" && (
                 <span className="text-xl md:mt-1 md:ml-2  md:block hidden">
                   <Image
@@ -290,7 +113,7 @@ const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center"
                   >
                     <div className="flex items-center gap-3">
                       <Image
@@ -299,13 +122,12 @@ const NavLinks = () => {
                         width={23}
                         height={23}
                       />
-
                       {slinks.Head}
                     </div>
 
                     <span className="text-xl md:mt-1 md:ml-2 inline">
                       <Image
-                        src="/drop-down.svg"
+                        src={dropDownIcon}
                         alt="drop-down"
                         width={7}
                         height={4}

@@ -1,19 +1,20 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { CustomButton } from "../buttons";
 import { Logo } from "../logo";
 import { ThemeSwitch } from "../theme-switch";
 import NavLinks from "./nav-links";
-import { usePathname } from "next/navigation";
-import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const { resolvedTheme } = useTheme();
+  const isDarkMode = resolvedTheme === "dark";
 
   const isMarginZero = () => {
     const paths = [
@@ -24,9 +25,24 @@ const Navbar = () => {
       "/post-launch",
       "/development",
       "/about",
+      "/",
     ];
     return paths.includes(pathname);
   };
+
+  const [navbarCloseToggleIcon, setNavbarCloseToggleIcon] = useState("");
+
+  const getNavBarHandleCloseIcon = () => {
+    if (open) {
+      setNavbarCloseToggleIcon(isDarkMode ? "/close-white.png" : "/close.svg");
+    } else {
+      setNavbarCloseToggleIcon(isDarkMode ? "/menu-white.png" : "/menu.svg");
+    }
+  };
+
+  useEffect(() => {
+    getNavBarHandleCloseIcon();
+  }, [open, resolvedTheme]);
 
   return (
     <nav
@@ -41,10 +57,10 @@ const Navbar = () => {
           </Link>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <Image
-              src={open ? "/close.svg" : "/menu.svg"}
+              src={navbarCloseToggleIcon}
               alt="menu"
-              width={30}
-              height={30}
+              width={isDarkMode ? 25 : 30}
+              height={isDarkMode ? 25 : 30}
             />
           </div>
         </div>
@@ -77,13 +93,16 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-white dark:bg-black fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
           <NavLinks />
           <div>
-            <CustomButton bgColor="bg-transparent" textColor="text-black">
+            <CustomButton
+              bgColor="bg-transparent dark:bg-white"
+              textColor="text-black"
+            >
               <Image
                 className="mr-2"
                 src="/eco.svg"
@@ -101,12 +120,7 @@ const Navbar = () => {
           </div>
           <div className="py-5 flex justify-evenly">
             <Image src="/map.svg" alt="map" width={25} height={25} />
-            <Image
-              src={resolvedTheme === "dark" ? "/moon-white.svg" : "/moon.svg"}
-              alt="moon"
-              width={25}
-              height={25}
-            />
+            <ThemeSwitch />
           </div>
         </ul>
       </div>
