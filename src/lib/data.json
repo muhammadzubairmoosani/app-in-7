@@ -409,7 +409,7 @@
             {
               "name": "Start your business",
               "subName": "Build your brand",
-              "link": "/"
+              "link": "/start-solutions"
             },
             {
               "name": "Create your website",
@@ -435,7 +435,7 @@
             {
               "name": "Market Your Business",
               "subName": "Reach and Retain Customer",
-              "link": "/"
+              "link": "/market-solutions"
             },
             {
               "name": "Market across social",
@@ -466,7 +466,7 @@
             {
               "name": "Manage your Business",
               "subName": "Track Sales, Orders & Analytics",
-              "link": "/"
+              "link": "/manage-solutions"
             },
             {
               "name": "Measure your Performance",
@@ -500,7 +500,7 @@
           "Head": "Pre Launch",
           "image": "/pre.svg",
           "sublink": [
-            { "name": "Server Management", "link": "/" },
+            { "name": "Server Management", "link": "/pre-launch" },
             { "name": "Brand Collaterals", "link": "/" },
             { "name": "PR and Blog Posts", "link": "/" },
             { "name": "Search Marketing & Social Media Setup", "link": "/" },
@@ -511,7 +511,7 @@
           "Head": "Development",
           "image": "/dev.svg",
           "sublink": [
-            { "name": "Android", "link": "/" },
+            { "name": "Android", "link": "/development" },
             { "name": "IOS", "link": "/" },
             { "name": "Known your Audience", "link": "/" }
           ]
@@ -520,7 +520,7 @@
           "Head": "Post Launch",
           "image": "/post.svg",
           "sublink": [
-            { "name": "CRM & HRM Integration", "link": "/" },
+            { "name": "CRM & HRM Integration", "link": "/post-launch" },
             { "name": "Live Chat & Tech Support", "link": "/" },
             { "name": "Post Launch PR", "link": "/" }
           ]
@@ -539,26 +539,31 @@
         {
           "Head": "About",
           "image": "/about.svg",
+          "link": "/about",
           "sublink": []
         },
         {
           "Head": "Careers",
           "image": "/careers.svg",
+          "link": "/careers",
           "sublink": []
         },
         {
           "Head": "Blog",
           "image": "/blog.svg",
+          "link": "/blog-one",
           "sublink": []
         },
         {
           "Head": "Help Center",
           "image": "/help.svg",
+          "link": "/help-center",
           "sublink": []
         },
         {
           "Head": "Contact",
           "image": "/contact.svg",
+          "link": "/contact",
           "sublink": []
         }
       ]

@@ -73,9 +73,18 @@ const NavLinks = () => {
                             height={23}
                           />
 
-                          <h1 className="text-lg font-semibold">
-                            {mysublinks.Head}
-                          </h1>
+                          {link.name === "Resources" ? (
+                            <Link
+                              href={mysublinks.link}
+                              className="hover:text-primary"
+                            >
+                              {mysublinks.Head}
+                            </Link>
+                          ) : (
+                            <h1 className="text-lg font-semibold">
+                              {mysublinks.Head}
+                            </h1>
+                          )}
                         </div>
                         {mysublinks.sublink.map((slink) => (
                           <li
