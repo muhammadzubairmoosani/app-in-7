@@ -4,7 +4,7 @@ export * from "./input-fiels";
 export * from "./logo";
 export * from "./theme-switch";
 export * from "./check-box";
-export * from "./header";
+export * from "./Navbar";
 export * from "./heading";
 export * from "./paragraph";
 export * from "./container";

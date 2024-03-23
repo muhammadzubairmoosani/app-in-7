@@ -1,6 +1,6 @@
 export * from "./about";
 export * from "./login";
-export * from "./get-started";
+export * from "./sign-up";
 export * from "./contact";
 export * from "./careers";
 export * from "./pricing";
@@ -9,3 +9,4 @@ export * from "./blog-two";
 export * from "./blog-one";
 export * from "./help-center";
 export * from "./home";
+export * from "./get-starts";

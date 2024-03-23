@@ -11,7 +11,7 @@ import { ThemeSwitch } from "../theme-switch";
 const Navbar = () => {
   const [open, setOpen] = useState(true);
   return (
-    <nav className="bg-white">
+    <nav className="bg-white mb-14">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 px-5 py-3 md:w-auto w-full flex justify-between items-center">
           <Link href="/">

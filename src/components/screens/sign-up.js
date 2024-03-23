@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "../common";
 
-export const GetStarted = () => {
+export const SignUp = () => {
   return (
     <div className="min-h-screen flex justify-center items-center text-center">
       <div className="min-h-[620px]  flex flex-col items-center justify-between">

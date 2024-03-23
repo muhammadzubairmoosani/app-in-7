@@ -311,5 +311,12 @@
       "username": "Name",
       "userTitle": "Profesison"
     }
-  }
+  },
+  "businessTypes": [
+    "Branding Agency",
+    "Search Marketing Agency",
+    "Web-Based Application Service",
+    "IT support company",
+    "Sales strategy Firm"
+  ]
 }
