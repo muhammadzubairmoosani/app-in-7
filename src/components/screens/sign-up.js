@@ -1,21 +1,16 @@
 import Image from "next/image";
+import { CustomButton, Heading, Paragraph, TextField } from "../common";
 import Link from "next/link";
-import { Logo } from "../common";
 
 export const SignUp = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center text-center">
-      <div className="min-h-[620px]  flex flex-col items-center justify-between">
-        <Logo width={100} />
-        <h1 className="text-2xl md:text-4xl font-medium">
-          Create an Appin7 account
-        </h1>
+    <div className=" px-2 md:max-w-[60%] mx-auto flex flex-col gap-12">
+      <div>
+        <Heading>Get Started Now</Heading>
+      </div>
 
-        <p className="text-lg md:text-xl">
-          One last step before starting your...
-        </p>
-
-        <div className="flex">
+      <div className="flex flex-col items-center gap-12">
+        <div>
           <div className="p-6 px-8 mr-8 rounded-xl inline-block border-[1px] border-light-gray">
             <Image src="/apple.svg" alt="Apple logo" width={25} height={25} />
           </div>
@@ -23,24 +18,34 @@ export const SignUp = () => {
             <Image src="/google.svg" alt="Apple logo" width={25} height={25} />
           </div>
         </div>
+        <Paragraph className="text-gray text-xl">Or sign up with</Paragraph>
+      </div>
 
-        <div className="">
-          <Image src="/or.svg" alt="or" width={350} height={350} />
+      <div className="flex gap-6 flex-col">
+        <div className="flex flex-col md:flex-row gap-6">
+          <TextField placeholder="First name" className="md:w-1/2" />
+          <TextField placeholder="Last name" className="md:w-1/2" />
         </div>
+        <div className="flex flex-col gap-6">
+          <TextField placeholder="Phone number" />
+          <TextField placeholder="Email" />
+          <TextField placeholder="Password" />
+        </div>
+      </div>
 
-        <p className="text-xl">
-          Already have an account?{" "}
-          <span>
-            <Link href="#" className="bg-transparent  w-full text-primary">
-              Login
-            </Link>
-          </span>
-        </p>
+      <div className=" flex justify-center">
+        <CustomButton className="bg-gradient-to-r from-customRed to-customIndigo md:w-[325px]">
+          Continue
+        </CustomButton>
+      </div>
 
-        <p className="text-base mt-4">
-          By proceeding, you agree to the Terms and Conditions and Privacy
-          Policy
-        </p>
+      <div>
+        <Paragraph>
+          Account already exists?{" "}
+          <Link href="#" className="underline font-semibold">
+            Login Now
+          </Link>
+        </Paragraph>
       </div>
     </div>
   );

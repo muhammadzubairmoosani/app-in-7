@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ThemeSwitch } from "../theme-switch";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <nav className="bg-white mb-14">
       <div className="flex items-center font-medium justify-around">
