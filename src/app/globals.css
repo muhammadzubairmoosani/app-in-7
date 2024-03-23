@@ -58,3 +58,19 @@ body {
 .value-ad-ons-background-image {
   background-image: url("/value-ad-ons.png");
 }
+
+/* For desktop */
+@media (min-width: 768px) {
+  /* Set width for desktop */
+  .what {
+    width: 112px;
+  }
+}
+
+/* For mobile */
+@media (max-width: 767px) {
+  /* Set width for mobile */
+  .what {
+    width: 50px;
+  }
+}

@@ -8,10 +8,12 @@ import { Logo } from "../logo";
 import { ThemeSwitch } from "../theme-switch";
 import NavLinks from "./nav-links";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { resolvedTheme } = useTheme();
 
   const isMarginZero = () => {
     const paths = [
@@ -21,12 +23,17 @@ const Navbar = () => {
       "/pre-launch",
       "/post-launch",
       "/development",
+      "/about",
     ];
     return paths.includes(pathname);
   };
 
   return (
-    <nav className={`bg-white mb-${isMarginZero() ? "0" : "14"}`}>
+    <nav
+      className={`bg-white dark:bg-black shadow-md mb-${
+        isMarginZero() ? "0" : "14"
+      }`}
+    >
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 px-5 py-3 md:w-auto w-full flex justify-between items-center">
           <Link href="/">
@@ -94,7 +101,12 @@ const Navbar = () => {
           </div>
           <div className="py-5 flex justify-evenly">
             <Image src="/map.svg" alt="map" width={25} height={25} />
-            <Image src="/moon.svg" alt="moon" width={25} height={25} />
+            <Image
+              src={resolvedTheme === "dark" ? "/moon-white.svg" : "/moon.svg"}
+              alt="moon"
+              width={25}
+              height={25}
+            />
           </div>
         </ul>
       </div>

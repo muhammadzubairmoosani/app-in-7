@@ -8,11 +8,13 @@ export const About = () => {
 
   return (
     <div>
-      {/* TOP */}
-      <div className="about-background-image bg-cover bg-no-repeat bg-center h-screen flex items-center mb-12 md:mb-0 ">
-        <div className="flex  flex-col items-center gap-12 max-w-[750px] mx-auto text-center px-4">
+      <div className="about-background-image  bg-no-repeat bg-center max-h-[420px] box-content flex items-center py-8">
+        {/* TOP */}
+        <div className="flex flex-col items-center gap-4 max-w-[750px] mx-auto text-center px-2">
           <div>
-            <Heading className="mt-2 md:text-5xl">Why Appin7</Heading>
+            <Heading className="mt-2 md:text-5xl" textSize="text-4xl">
+              Why Appin7
+            </Heading>
           </div>
           <Paragraph>
             Our journey began three years ago while serving in the IT industry
@@ -25,7 +27,7 @@ export const About = () => {
             pushing boundaries and exceeding expectations of our valuable
             clients all across the globe.
           </Paragraph>
-        </div>{" "}
+        </div>
       </div>
 
       {/* BODY */}
@@ -33,15 +35,18 @@ export const About = () => {
         <div className="flex flex-col gap-14">
           {/* card */}
           <div className="mt-14 flex justify-between items-center flex-col-reverse md:flex-row">
-            <div className="h-[200px] flex justify-between flex-col max-w-[732px]">
-              <Paragraph className="text-primary text-2xl font-medium">
-                Cross-Platform App
+            <div className=" flex justify-between flex-col max-w-[732px]">
+              <Paragraph className="text-primary my-6 text-4xl md:text-5xl text-center md:text-start font-medium">
+                Appin7 - Vision
               </Paragraph>
               <Paragraph>
-                We  develop these using frameworks like React Native or Flutter
-                which allow us to efficiently create apps that run on both iOS
-                and Android. By utilizing this approach we can maintain native
-                performance and achieve faster development.{" "}
+                Appin7 envisions a future where technology is limitless and
+                accessible to all. Inspired by our Research Institute of
+                Technology, we&apos;re dedicated to fostering a community of
+                passionate innovators, providing free training and tools to
+                empower individuals worldwide. Our mission is simple: to ignite
+                innovation and democratize access to IT expertise as our
+                contribution to help the world transform digitally.
               </Paragraph>
             </div>
             <div>
@@ -58,10 +63,16 @@ export const About = () => {
 
           <div className="flex flex-col gap-8 text-center text-lg">
             <div className="flex justify-center items-center">
-              <Heading className="md:text-6xl">
+              <Heading className="text-4xl md:text-6xl" textSize="text-4xl">
                 Why Appin7
-                <Image src="/what.svg" alt="why" width={112} height={169} />
               </Heading>
+              <Image
+                src="/what.svg"
+                alt="why"
+                width={112}
+                height={169}
+                className="what"
+              />
             </div>
 
             <Paragraph>
@@ -134,7 +145,7 @@ export const About = () => {
             </Paragraph>
           </div>
 
-          <div className="mx-auto w-[687px] text-center">
+          <div className="mx-auto max-w-[687px] text-center">
             <div className="mb-14">
               <Heading className="md:text-6xl">
                 Appin7 - a Product of Nexovia Digital
