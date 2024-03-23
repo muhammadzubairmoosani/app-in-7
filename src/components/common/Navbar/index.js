@@ -1,17 +1,29 @@
 "use client";
 
-import React, { useState } from "react";
-import NavLinks from "./nav-links";
-import Link from "next/link";
-import { Logo } from "../logo";
-import { CustomButton } from "../buttons";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { CustomButton } from "../buttons";
+import { Logo } from "../logo";
 import { ThemeSwitch } from "../theme-switch";
+import NavLinks from "./nav-links";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isMarginZero = () => {
+    const paths = [
+      "/start-solutions",
+      "/market-solutions",
+      "/manage-solutions",
+    ];
+    return paths.includes(pathname);
+  };
+
   return (
-    <nav className="bg-white mb-14">
+    <nav className={`bg-white mb-${isMarginZero() ? "0" : "14"}`}>
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 px-5 py-3 md:w-auto w-full flex justify-between items-center">
           <Link href="/">

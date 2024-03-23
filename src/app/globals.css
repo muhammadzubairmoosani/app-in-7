@@ -38,3 +38,15 @@ body {
 .home-background-image {
   background-image: url("/home-banner.png");
 }
+
+.start-solution-background-image {
+  background-image: url("/start-solutions-wall.png");
+}
+
+.market-solution-background-image {
+  background-image: url("/market-Solutons.png");
+}
+
+.manage-solution-background-image {
+  background-image: url("/manage-Solutons.png");
+}

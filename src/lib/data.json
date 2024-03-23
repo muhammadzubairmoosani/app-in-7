@@ -318,5 +318,83 @@
     "Web-Based Application Service",
     "IT support company",
     "Sales strategy Firm"
-  ]
+  ],
+  "startSolution": {
+    "1": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Generate a Business Name",
+      "subTitle": "Find a name that fits your personality and business idea.",
+      "link": "#"
+    },
+    "2": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Create a Free Logo",
+      "subTitle": "Stand out from the competition and make your business unforgettable.",
+      "link": "#"
+    },
+    "3": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Get a Custom Web Domain",
+      "subTitle": "Craft the look and feel of your brand and help customers connect with your business.",
+      "link": "#"
+    },
+    "4": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Download free stock Photos",
+      "subTitle": "Personalize your website with free, high resolution images from Burst.",
+      "link": "#"
+    }
+  },
+  "marketSolution": {
+    "1": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Content Marketing",
+      "subTitle": "Build your audience and drive traffic to your business with built-in blogging tools.",
+      "link": "#"
+    },
+    "2": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "SEO tools",
+      "subTitle": "Help people to find store with SEO tools (edit title tags, meta descriptions, product details).",
+      "link": "#"
+    },
+    "3": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Facebook Ads",
+      "subTitle": "Use Appin7 to choose an audience and feel confident you’re targeting ideal shoppers.",
+      "link": "#"
+    }
+  },
+  "manageSolution": {
+    "1": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Content Management",
+      "subTitle": "Build your audience and drive traffic to your business with built-in blogging tools.",
+      "link": "#"
+    },
+    "2": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "Centralize Order Managment",
+      "subTitle": "Help people find your store with SEO tools to edit title tags, meta descriptions, and product details.",
+      "link": "#"
+    },
+    "3": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "FULFILLMENT OUTSOURCING",
+      "subTitle": "Use Appin7 to choose an audience and feel confident you’re targeting ideal shoppers.",
+      "link": "#"
+    },
+    "4": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "BUSINESS AUTOMATION TOOLS",
+      "subTitle": "Use Appin7 to choose an audience and feel confident you’re targeting ideal shoppers.",
+      "link": "#"
+    },
+    "5": {
+      "image": "/Launch-with-Tech-Excellence.svg",
+      "title": "ANALYTICS AND REPORTING",
+      "subTitle": "Use Appin7 to choose an audience and feel confident you’re targeting ideal shoppers.",
+      "link": "#"
+    }
+  }
 }

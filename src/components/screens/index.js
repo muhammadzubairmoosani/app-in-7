@@ -10,3 +10,6 @@ export * from "./blog-one";
 export * from "./help-center";
 export * from "./home";
 export * from "./get-starts";
+export * from "./start-solutions";
+export * from "./market-solutions";
+export * from "./manage.solutons";
