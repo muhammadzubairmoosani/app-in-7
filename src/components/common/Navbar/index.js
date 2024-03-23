@@ -30,9 +30,14 @@ const Navbar = () => {
     return paths.includes(pathname);
   };
 
-  const [navbarCloseToggleIcon, setNavbarCloseToggleIcon] = useState("");
+  const [navbarCloseToggleIcon, setNavbarCloseToggleIcon] =
+    useState("/menu.svg");
+  const [mapIcon, setMapIcon] = useState("/map.svg");
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const getNavBarHandleCloseIcon = () => {
+    setMapIcon(isDarkMode ? "/map-white.svg" : "/map.svg");
+
     if (open) {
       setNavbarCloseToggleIcon(isDarkMode ? "/close-white.png" : "/close.svg");
     } else {
@@ -42,7 +47,7 @@ const Navbar = () => {
 
   useEffect(() => {
     getNavBarHandleCloseIcon();
-  }, [open, resolvedTheme]);
+  }, [getNavBarHandleCloseIcon, open, resolvedTheme]);
 
   return (
     <nav
@@ -53,7 +58,7 @@ const Navbar = () => {
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 px-5 py-3 md:w-auto w-full flex justify-between items-center">
           <Link href="/">
-            <Logo width={50} />
+            <Logo width={60} />
           </Link>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <Image
@@ -70,7 +75,7 @@ const Navbar = () => {
         <div className="md:block hidden">
           <div className="flex gap-6">
             <CustomButton
-              bgColor="bg-transparent hover:bg-light-gray"
+              bgColor="bg-transparent dark:bg-white hover:bg-light-gray"
               textColor="text-black"
             >
               <Image
@@ -86,7 +91,12 @@ const Navbar = () => {
               Get Started
             </CustomButton>
 
-            <Image src="/map.svg" alt="map" width={20} height={20} />
+            <Image
+              src={mapIcon}
+              alt="map"
+              width={isDarkMode ? 30 : 25}
+              height={isDarkMode ? 30 : 25}
+            />
             <ThemeSwitch />
           </div>
         </div>
@@ -119,7 +129,13 @@ const Navbar = () => {
             </CustomButton>
           </div>
           <div className="py-5 flex justify-evenly">
-            <Image src="/map.svg" alt="map" width={25} height={25} />
+            <Image
+              src={mapIcon}
+              alt="map"
+              width={isDarkMode ? 30 : 25}
+              height={isDarkMode ? 30 : 25}
+            />
+
             <ThemeSwitch />
           </div>
         </ul>

@@ -29,8 +29,8 @@ export const ThemeSwitch = () => {
         <Image
           src="/moon-white.svg"
           alt="Dark Mode Moon"
-          width={25}
-          height={25}
+          width={22}
+          height={22}
         />
       </div>
     );
@@ -39,7 +39,7 @@ export const ThemeSwitch = () => {
   if (resolvedTheme === "light") {
     return (
       <div onClick={() => setTheme("dark")} className="inline-flex">
-        <Image src="/moon.svg" alt="Dark Mode Moon" width={25} height={25} />
+        <Image src="/moon.svg" alt="Dark Mode Moon" width={22} height={22} />
       </div>
     );
   }
