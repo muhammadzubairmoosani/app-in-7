@@ -54,3 +54,7 @@ body {
 .about-background-image {
   background-image: url("/about-wall.png");
 }
+
+.value-ad-ons-background-image {
+  background-image: url("/value-ad-ons.png");
+}

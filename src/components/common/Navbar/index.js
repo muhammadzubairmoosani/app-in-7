@@ -18,6 +18,9 @@ const Navbar = () => {
       "/start-solutions",
       "/market-solutions",
       "/manage-solutions",
+      "/pre-launch",
+      "/post-launch",
+      "/development",
     ];
     return paths.includes(pathname);
   };

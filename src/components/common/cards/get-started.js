@@ -3,26 +3,24 @@ import Link from "next/link";
 
 export const CardGetStarted = ({ item }) => (
   <div
-    className={`w-full max-w-[490px] p-8 rounded-lg overflow-hidden  border-2 border-light-gray`}
+    className={`w-full  p-4 rounded-lg overflow-hidden  border-2 border-light-gray flex flex-col gap-5`}
   >
     <div className="w-full flex items-center ">
       <Image
         className="mr-4"
         src={item.image}
         alt="Server Management"
-        width={50}
-        height={50}
+        width={36}
+        height={36}
       />
-      <p className="text-xl max-w-40">{item.title}</p>
+      <p className="max-w-[190px]">{item.title}</p>
     </div>
 
-    <h2 className="w-full text-lg mt-6 mb-14 text-dark dark:text-light-gray">
-      {item.subTitle}
-    </h2>
+    <h2 className="w-full text-dark dark:text-light-gray">{item.subTitle}</h2>
 
     <Link
       href={item.link}
-      className="bg-transparent w-full text-dark dark:text-light-gray text-xl font-semibold"
+      className="bg-transparent w-full text-dark dark:text-light-gray"
     >
       Get Started →
     </Link>
