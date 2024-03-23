@@ -12,7 +12,12 @@ export const SignUp = () => {
       <div className="flex flex-col items-center gap-12">
         <div>
           <div className="p-6 px-8 mr-8 rounded-xl inline-block border-[1px] border-light-gray">
-            <Image src="/apple.svg" alt="Apple logo" width={25} height={25} />
+            <Image
+              src="/apple-black.svg"
+              alt="Apple logo"
+              width={25}
+              height={25}
+            />
           </div>
           <div className="p-6 px-8 rounded-xl inline-block border-[1px] border-light-gray">
             <Image src="/google.svg" alt="Apple logo" width={25} height={25} />
