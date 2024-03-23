@@ -31,7 +31,15 @@ const NavLinks = () => {
                 setSubHeading("");
               }}
             >
-              {link.name}
+              {link.name === "Pricing" ? (
+                <Link href={link.link} className="hover:text-primary">
+                  {link.name}
+                </Link>
+              ) : (
+                link.name
+              )}
+
+              {/* {link.name} */}
               {link.name !== "Pricing" && (
                 <span className="text-xl md:hidden inline">
                   <Image
